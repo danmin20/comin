@@ -1,11 +1,13 @@
 package com.danmin.comin.Fragment
 
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.danmin.comin.Fragment.MarketInfo.MarketinfoActivity
 import com.danmin.comin.R
 import kotlinx.android.synthetic.main.fragment_first.view.*
 
@@ -33,6 +35,11 @@ class FirstFragment : Fragment() {
 
         val list_adapter = FirstFragAdapter(requireContext(), list_array)
         view.listview_first_fragment.adapter = list_adapter
+
+        view.listview_first_fragment.setOnItemClickListener { adapterView, view, i, id ->
+            val intent = Intent(requireContext(), MarketinfoActivity::class.java)
+            startActivity(intent)
+        }
 
         return view
     }
