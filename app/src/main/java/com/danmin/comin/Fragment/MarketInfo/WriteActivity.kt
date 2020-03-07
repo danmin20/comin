@@ -20,6 +20,8 @@ class WriteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_write)
 
+        auth = FirebaseAuth.getInstance()
+
         //get rating
         rating_area.setOnRatingBarChangeListener { ratingBar, fl, b ->
             rating_num = fl.toString()
@@ -34,7 +36,7 @@ class WriteActivity : AppCompatActivity() {
 
         writing_button.setOnClickListener {
             val form = hashMapOf(
-                "test" to text_input_area.text.toString(),
+                "text" to text_input_area.text.toString(),
                 "writer" to nickname,
                 "rating" to rating_num
             )
@@ -42,7 +44,7 @@ class WriteActivity : AppCompatActivity() {
                 .add(form)
                 .addOnSuccessListener {
                     Toast.makeText(this, "success", Toast.LENGTH_LONG).show()
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, MarketinfoActivity::class.java)
                     startActivity(intent)
                     finish()
                 }
