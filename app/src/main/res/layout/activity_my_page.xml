@@ -26,4 +26,11 @@
         app:layout_constraintLeft_toRightOf="@+id/profile_img"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        app:layout_constraintTop_toBottomOf="@+id/profile_img" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
