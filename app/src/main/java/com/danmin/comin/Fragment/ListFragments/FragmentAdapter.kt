@@ -1,4 +1,4 @@
-package com.danmin.comin.Fragment
+package com.danmin.comin.Fragment.ListFragments
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

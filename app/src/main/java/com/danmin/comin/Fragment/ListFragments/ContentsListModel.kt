@@ -1,7 +1,7 @@
-package com.danmin.comin.Fragment
+package com.danmin.comin.Fragment.ListFragments
 
 data class ContentsListModel(
-    var image: String,
+    var image: Int,
     var title: String,
     var number: Int,
     var category: String

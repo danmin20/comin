@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="수업정보"
         android:textColor="#000000"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -79,10 +78,27 @@
         app:layout_constraintTop_toBottomOf="@id/price_area" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/zzim"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/header_bottom_line">
+
+        <TextView
+            android:id="@+id/header_zzim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="찜 목록에 추가하기"
+            android:textColor="#FF0000"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/menu_bar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        app:layout_constraintTop_toBottomOf="@+id/header_bottom_line">
+        app:layout_constraintTop_toBottomOf="@+id/zzim">
 
         <TextView
             android:id="@+id/figure_1"

@@ -1,4 +1,4 @@
-package com.danmin.comin.Fragment
+package com.danmin.comin.Fragment.ListFragments
 
 
 import android.os.Bundle
@@ -11,14 +11,14 @@ import com.danmin.comin.R
 /**
  * A simple [Fragment] subclass.
  */
-class SecondFragment : Fragment() {
+class ThirdFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second, container, false)
+        return inflater.inflate(R.layout.fragment_third, container, false)
     }
 
 
